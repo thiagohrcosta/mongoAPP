@@ -1,3 +1,15 @@
-<h1>Books</h1>
+<div class="container mt-5">
+  <p>
+    <strong>Name:</strong>
+    <%= @book.title %>
+  </p>
 
-<% @book.title %>
+  <p>
+    <strong>Author:</strong>
+    <%= @book.author.name %>
+  </p>
+
+  <%= link_to "Edit book", edit_book_path(@book.id), class: "btn btn-info" %>
+  <%= link_to "New Book", new_book_path, class: "btn btn-primary" %>
+
+</div>

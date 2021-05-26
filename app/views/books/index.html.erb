@@ -1,0 +1,7 @@
+<div class="container mt-5">
+  <% @books.each do |book| %>
+    <%= link_to book_path(book.id) do %>
+    <p><%= book.title %></p>
+    <% end %>
+  <% end %>
+</div>

@@ -1,5 +1,5 @@
 <%= simple_form_for book do |f| %>
-    <%= f.input :name %>
+    <%= f.input :title %>
     <%= f.collection_select(:author_id, Author.all, :id, :name) %>
     <%= f.submit class: "btn btn-primary" %>
   <% end %>
