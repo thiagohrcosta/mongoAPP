@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  resources :authors  
+  root to: "authors#index"
+
+  resources :authors
 end
