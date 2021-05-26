@@ -21,6 +21,11 @@ class AuthorsController < ApplicationController
     end
 	end
 
+  def destroy
+    @author.destroy
+    redirect_to root_path
+  end
+
 	private
 
 	def author_params
